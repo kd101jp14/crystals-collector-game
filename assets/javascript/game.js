@@ -82,3 +82,5 @@ $(document).ready(function () {
         }
     });
 });
+
+// To Do: 1) Fix gem value repeat issue. 2) Center gems for small viewport.
