@@ -3,18 +3,20 @@ $(document).ready(function () {
 
     // The following variables are declared globally.
     var score = 0;
+    var wins = 0;
+    var losses = 0;
     var magicNumber = 19;
     var randGemVal = 12;
 
     // Computer chooses random number.
-     var randFunct = function () {
+    var randFunct = function () {
         magicNumber = Math.floor(Math.random() * 102) + 19;
         $(".magicNum").html("Magic Number: " + magicNumber);
     };
     randFunct();
 
     // Function returns random values between 2 and 12 to be assigned to gems.
-     var gemValFunct = function () {
+    var gemValFunct = function () {
         randGemVal = Math.floor(Math.random() * 11) + 2;
         return randGemVal;
     };
@@ -25,7 +27,7 @@ $(document).ready(function () {
     var topazVal = gemValFunct();
     var emeraldVal = gemValFunct();
 
-    // User is able to click on gems to reach the magic number.
+    // User can click on gems to attempt to match score w/ magic number.
     $("#sapphire").click(function () {
         score += sapphireVal;
         $(".scoreDisplay").text("Your Current Score: " + score);
@@ -50,5 +52,26 @@ $(document).ready(function () {
         console.log(emeraldVal);
     });
 
+    var reset = function () {
+        score = 0;
+        randFunct();
+        sapphireVal = gemValFunct();
+        garnetVal = gemValFunct();
+        topazVal = gemValFunct();
+        emeraldVal = gemValFunct();
+    };
 
+    // Wins and losses are determined by score.
+    $("#gem").click(function () {
+        if (score > magicNumber) {
+            losses = losses++;
+            $(".lossDisplay").text("Losses: " + losses);
+            reset();
+        }
+        if (score === magicNumber) {
+            wins = wins++;
+            $(".winsDisplay").text("Wins: " + wins);
+            reset();
+        }
+    });
 });
