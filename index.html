@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cystals Collector Game</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <!-- jQuery library CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+        crossorigin="anonymous"></script>
+    <!-- JavaScript Link -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <!-- Google Fonts Link -->
+    <link href="https://fonts.googleapis.com/css?family=Denk+One" rel="stylesheet">
+    <!--External CSS Link  -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="container mainContainer">
+        <div class="row">
+            <div class="col-sm">
+                <img class="gameTitle img-fluid" src="assets/images/gameTitle.png" alt="Crystals Collector Game">
+            </div>
+        </div>
+        <div class="row instructions">
+            <div class="col-sm">
+                <p>A mystical gnome has chosen a magic number.</p>
+                <p>There are four crystals below. By clicking on a crystal, you'll add a specific amount of points
+                    to
+                    your total score.</p>
+                <p>You win the game by matching your total score to magic number. You'll lose if your total score
+                    goes above the magic number.</p>
+                <p>The value of each crystal is hidden from you until you click on it.</p>
+                <p>Each time when the game starts, the gnome will change the values of each crystal.</p>
+                <p>Good luck!</p>
+            </div>
+        </div>
+        <div class="row randDisplay">
+            <div class="col-md">
+                <p class="magicNum">Magic Number:</p>
+            </div>
+        </div>
+        <div class="row winsLosses">
+            <div class="col-md">
+                <p class="winsDisplay">Wins: 0</p>
+            </div>
+            <div class="col-md-3"></div>
+            <p class="lossDisplay">Losses: 0</p>
+        </div>
+        <div class="row scoreDisplay">
+            <div class="col-md-3">
+                <p>Your Current Score: 0</p>
+            </div>
+        </div>
+        <div class="row gems">
+            <div class="col-md">
+                <img class="gem img-fluid" id="sapphire" src="assets/images/sapphire.png" alt="sapphire">
+            </div>
+            <div class="col-md">
+                <img class="gem img-fluid" id="garnet" src="assets/images/garnet.png" alt="garnet">
+            </div>
+            <div class="col-md">
+                <img class="gem img-fluid" id="topaz" src="assets/images/topaz.png" alt="topaz">
+            </div>
+            <div class="col-md">
+                <img class="gem img-fluid" id="emerald" src="assets/images/emerald.png" alt="emerald">
+            </div>
+        </div>
+    </div>
+    <!-- Bootstrap Javascript Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
