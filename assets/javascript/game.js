@@ -27,6 +27,11 @@ $(document).ready(function () {
     var topazVal = gemValFunct();
     var emeraldVal = gemValFunct();
 
+    // User knows gems are clickable, as cursor becomes pointer when hovering.
+    $(".gem").hover(function() {
+        $(this).css('cursor','pointer');
+    });
+
     // User can click on gems to attempt to match score w/ magic number.
     $("#sapphire").click(function () {
         score += sapphireVal;
@@ -52,6 +57,7 @@ $(document).ready(function () {
         console.log(emeraldVal);
     });
 
+    // Function allows game reset.
     var reset = function () {
         score = 0;
         $(".scoreDisplay").text("Your Current Score: " + score);
@@ -62,7 +68,7 @@ $(document).ready(function () {
         emeraldVal = gemValFunct();
     };
 
-    // Wins and losses are determined by score.
+    // Wins, losses, and reset are determined by score.
     $(".gem").click(function () {
         if (score > magicNumber) {
             losses++;
