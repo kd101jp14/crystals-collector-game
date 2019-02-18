@@ -54,6 +54,7 @@ $(document).ready(function () {
 
     var reset = function () {
         score = 0;
+        $(".scoreDisplay").text("Your Current Score: " + score);
         randFunct();
         sapphireVal = gemValFunct();
         garnetVal = gemValFunct();
@@ -62,14 +63,14 @@ $(document).ready(function () {
     };
 
     // Wins and losses are determined by score.
-    $("#gem").click(function () {
+    $(".gem").click(function () {
         if (score > magicNumber) {
-            losses = losses++;
+            losses++;
             $(".lossDisplay").text("Losses: " + losses);
             reset();
         }
         if (score === magicNumber) {
-            wins = wins++;
+            wins++;
             $(".winsDisplay").text("Wins: " + wins);
             reset();
         }
