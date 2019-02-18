@@ -27,9 +27,26 @@ $(document).ready(function () {
     var topazVal = gemValFunct();
     var emeraldVal = gemValFunct();
 
+    // Gems are not allowed to have the same value.
+    if (sapphireVal === garnetVal || sapphireVal === topazVal || sapphireVal === emeraldVal) {
+        sapphireVal = gemValFunct();
+    }
+
+    if (garnetVal === sapphireVal || garnetVal === topazVal || garnetVal === emeraldVal) {
+        garnetVal = gemValFunct();
+    }
+
+    if (topazVal === sapphireVal ||topazVal ===garnetVal ||topazVal === emeraldVal) {
+       topazVal = gemValFunct();
+    }
+
+    if (emeraldVal === sapphireVal || emeraldVal === topazVal || emeraldVal === garnetVal) {
+        emeraldVal = gemValFunct();
+    }
+
     // User knows gems are clickable, as cursor becomes pointer when hovering.
-    $(".gem").hover(function() {
-        $(this).css('cursor','pointer');
+    $(".gem").hover(function () {
+        $(this).css('cursor', 'pointer');
     });
 
     // User can click on gems to attempt to match score w/ magic number.
@@ -82,5 +99,3 @@ $(document).ready(function () {
         }
     });
 });
-
-// To Do: 1) Fix gem value repeat issue. 2) Center gems for small viewport.

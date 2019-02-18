@@ -38,10 +38,10 @@ body {
     width: 160px;
     height: 102px;
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
-/* After applying Bootstrap, 
-gems still needed to be centered and resized for small viewport. */
+/* After applying Bootstrap, gems still needed to be centered and resized for small viewport. */
 @media (max-width: 591px) {
     .gem {
         display: block;
