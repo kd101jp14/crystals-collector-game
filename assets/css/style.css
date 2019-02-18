@@ -11,9 +11,31 @@ body {
 
 .gameTitle {
     margin: 15px auto 15px auto;
+    height: 130px;
+}
+
+.magicNum {
+    color: yellow;
+    text-align: center;
+}
+
+.winsDisplay {
+    color: green;
+    text-align: center;
+}
+
+.lossDisplay {
+    color: red;
+    text-align: center;
+}
+
+.scoreDisplay {
+    color: #3798dd;
+    text-align: center;
 }
 
 .gem {
-    width: 200px;
-    height: 160px;
+    width: 160px;
+    height: 102px;
+    margin-top: 50px;
 }
