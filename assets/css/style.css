@@ -1,12 +1,17 @@
 body {
-    background-color: black;
-    color: grey;
+    background-image: url(../images/crystalCave.jpg);
+    color: goldenrod;
     font-size: 20px;
     font-family: 'Denk One', sans-serif;
+    text-align: center;
 }
 
 .mainContainer {
     max-width: 930px;
+}
+
+p {
+    background-color: black;
 }
 
 .gameTitle {
@@ -14,9 +19,14 @@ body {
     height: 130px;
 }
 
+.instructions {
+    background: black;
+}
+
 .magicNum {
     color: yellow;
     text-align: center;
+    margin-top: 16px;
 }
 
 .winsDisplay {
@@ -37,8 +47,8 @@ body {
 .gem {
     width: 160px;
     height: 102px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* After applying Bootstrap, gems still needed to be centered and resized for small viewport. */
