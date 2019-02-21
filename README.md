@@ -1,5 +1,4 @@
-# unit-4-game
-# Crystals Collector
+# unit-4-game : Crystals Collector
 
 ## Contributors
 
