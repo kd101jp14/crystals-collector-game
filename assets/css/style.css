@@ -1,6 +1,6 @@
 body {
     background-image: url(../images/crystalCave.jpg);
-    color: goldenrod;
+    color: #ffda2d;
     font-size: 20px;
     font-family: 'Denk One', sans-serif;
     text-align: center;
@@ -24,13 +24,13 @@ p {
 }
 
 .magicNum {
-    color: yellow;
+    color: orange;
     text-align: center;
     margin-top: 16px;
 }
 
 .winsDisplay {
-    color: green;
+    color: #32ea1a;
     text-align: center;
 }
 

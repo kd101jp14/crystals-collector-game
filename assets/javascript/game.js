@@ -1,5 +1,7 @@
 // On page load...
 $(document).ready(function () {
+    // Audio begins to play.
+    $("#mysteryMusic").get(0).play();
 
     // The following variables are declared globally.
     var score = 0;
@@ -90,11 +92,13 @@ $(document).ready(function () {
         if (score > magicNumber) {
             losses++;
             $(".lossDisplay").text("Losses: " + losses);
+            $("#loseSound").get(0).play();
             reset();
         }
         if (score === magicNumber) {
             wins++;
             $(".winsDisplay").text("Wins: " + wins);
+            $("#winSound").get(0).play();
             reset();
         }
     });
