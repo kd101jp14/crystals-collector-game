@@ -1,7 +1,7 @@
 // On page load...
 $(document).ready(function () {
 
-    // Audio plays once page is loaded.
+    // Audio plays once page is loaded. (This feature is not allowed in Google browser.)
     $("#mysteryMusic").get(0).play();
 
     // The following variables are declared globally.
