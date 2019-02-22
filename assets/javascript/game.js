@@ -1,8 +1,10 @@
 // On page load...
 $(document).ready(function () {
 
-    // Audio plays once page is loaded. (This feature is not allowed in Google browser.)
-    $("#mysteryMusic").get(0).play();
+    // Audio plays once user clicks anywhere on the page. (Created this function b/c Google Chrome does not allow audio to play on page load.)
+    $(document).one("click", function() {
+        $("#mysteryMusic").get(0).play();
+    });
 
     // The following variables are declared globally.
     var score = 0;
