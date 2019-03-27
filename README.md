@@ -12,7 +12,8 @@ kd101jp14
 * JavaScript
 * jQuery 3
 
-* Live demo: https://kd101jp14.github.io/crystals-collector-game/
+## Live demo:
+https://kd101jp14.github.io/crystals-collector-game/
 
 ## About
 
